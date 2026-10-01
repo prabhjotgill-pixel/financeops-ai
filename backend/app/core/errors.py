@@ -1,7 +1,7 @@
 from typing import Any
 
 
-class IngestionError(Exception):
+class DomainError(Exception):
     def __init__(
         self,
         status_code: int,
@@ -14,3 +14,7 @@ class IngestionError(Exception):
         self.message = message
         self.details = details or {}
         super().__init__(message)
+
+
+class IngestionError(DomainError):
+    pass

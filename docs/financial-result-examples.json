@@ -1,0 +1,377 @@
+{
+  "pnl": {
+    "company_id": 1,
+    "metric": "operating_revenue",
+    "value": "100000.00",
+    "unit": "amount",
+    "status": "calculated",
+    "reason": null,
+    "calculation_basis": {
+      "kind": "period_activity",
+      "formula": "sum(credit - debit)",
+      "population_scope": {
+        "company_id": 1,
+        "currency": "INR",
+        "start_date": "2026-04-01",
+        "end_date": "2027-03-31",
+        "coverage_verified": false,
+        "population_fingerprint": "3fcd9edb4337127e71935efcedafa34975eed9d0bdb9f372c0d02a95b9148130"
+      },
+      "input_metrics": [],
+      "categories": [
+        "operating_revenue"
+      ]
+    },
+    "formula_version": "financial-intelligence/v1",
+    "currency": "INR",
+    "resolved_period": {
+      "fiscal_year": 2026,
+      "period_type": "year",
+      "start_date": "2026-04-01",
+      "end_date": "2027-03-31",
+      "day_count": 365,
+      "label": "FY 2026-27",
+      "financial_year_start_month": 4
+    },
+    "contributing_accounts": [
+      {
+        "account_id": 1,
+        "account_code": "0001",
+        "account_name": "Operating Revenue",
+        "account_type": "REVENUE",
+        "financial_statement": "PROFIT_AND_LOSS",
+        "financial_category": "operating_revenue",
+        "is_active": true,
+        "match_methods": [
+          "code"
+        ],
+        "debit": "0.00",
+        "credit": "100000.00",
+        "signed_amount": "100000.00",
+        "transaction_count": 4,
+        "source_file_ids": [
+          1
+        ]
+      }
+    ],
+    "transaction_count": 4,
+    "source_files": [
+      {
+        "source_file_id": 1,
+        "filename": "synthetic.csv",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "transaction_count": 4,
+        "warning_row_count": 0,
+        "error_row_count": 0
+      }
+    ],
+    "warnings": [
+      {
+        "code": "PERIOD_COVERAGE_UNVERIFIED",
+        "message": "Full reporting-period coverage is not verified.",
+        "scope": "period_activity",
+        "transaction_count": 0,
+        "source_file_ids": [],
+        "categories": [],
+        "debit": null,
+        "credit": null
+      }
+    ]
+  },
+  "balance_sheet": {
+    "company_id": 1,
+    "metric": "current_assets",
+    "value": "50000.00",
+    "unit": "amount",
+    "status": "incomplete",
+    "reason": {
+      "code": "ACTIVITY_DERIVED_SUBTOTAL",
+      "message": "Observed classified activity; verified opening and closing balances are unavailable."
+    },
+    "calculation_basis": {
+      "kind": "activity_derived",
+      "formula": "sum(observed classified category amounts)",
+      "population_scope": {
+        "company_id": 1,
+        "currency": "INR",
+        "start_date": null,
+        "end_date": "2027-03-31",
+        "coverage_verified": false,
+        "population_fingerprint": "742d5e3862a885de8c28330502c8c7d1e266efac9f000b355769e22a35b25393"
+      },
+      "input_metrics": [
+        "cash",
+        "trade_receivables"
+      ],
+      "categories": [
+        "cash",
+        "trade_receivables",
+        "inventory",
+        "other_current_assets"
+      ]
+    },
+    "formula_version": "financial-intelligence/v1",
+    "currency": "INR",
+    "resolved_period": {
+      "fiscal_year": 2026,
+      "period_type": "year",
+      "start_date": "2026-04-01",
+      "end_date": "2027-03-31",
+      "day_count": 365,
+      "label": "FY 2026-27",
+      "financial_year_start_month": 4
+    },
+    "contributing_accounts": [
+      {
+        "account_id": 1,
+        "account_code": "CASH",
+        "account_name": "Cash",
+        "account_type": "ASSET",
+        "financial_statement": "BALANCE_SHEET",
+        "financial_category": "cash",
+        "is_active": true,
+        "match_methods": [
+          "code"
+        ],
+        "debit": "30000.00",
+        "credit": "0.00",
+        "signed_amount": "30000.00",
+        "transaction_count": 1,
+        "source_file_ids": [
+          1
+        ]
+      },
+      {
+        "account_id": 2,
+        "account_code": "REC",
+        "account_name": "Trade Receivables",
+        "account_type": "ASSET",
+        "financial_statement": "BALANCE_SHEET",
+        "financial_category": "trade_receivables",
+        "is_active": true,
+        "match_methods": [
+          "code"
+        ],
+        "debit": "20000.00",
+        "credit": "0.00",
+        "signed_amount": "20000.00",
+        "transaction_count": 1,
+        "source_file_ids": [
+          1
+        ]
+      }
+    ],
+    "transaction_count": 2,
+    "source_files": [
+      {
+        "source_file_id": 1,
+        "filename": "synthetic.csv",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "transaction_count": 2,
+        "warning_row_count": 0,
+        "error_row_count": 0
+      }
+    ],
+    "warnings": [
+      {
+        "code": "OPENING_BALANCES_UNVERIFIED",
+        "message": "Loaded cumulative activity does not establish verified opening or closing balances.",
+        "scope": "activity_derived",
+        "transaction_count": 0,
+        "source_file_ids": [],
+        "categories": [],
+        "debit": null,
+        "credit": null
+      },
+      {
+        "code": "OPTIONAL_CATEGORIES_NOT_OBSERVED",
+        "message": "These categories have no observed classified activity and were not assumed to be zero.",
+        "scope": "activity_derived",
+        "transaction_count": 0,
+        "source_file_ids": [],
+        "categories": [
+          "inventory",
+          "other_current_assets"
+        ],
+        "debit": null,
+        "credit": null
+      }
+    ]
+  },
+  "ratio": {
+    "company_id": 1,
+    "metric": "gross_margin",
+    "value": "60.0000",
+    "unit": "percent",
+    "status": "calculated",
+    "reason": null,
+    "calculation_basis": {
+      "kind": "period_activity",
+      "formula": "gross_profit / operating_revenue * 100",
+      "population_scope": {
+        "company_id": 1,
+        "currency": "INR",
+        "start_date": "2026-04-01",
+        "end_date": "2027-03-31",
+        "coverage_verified": false,
+        "population_fingerprint": "3fcd9edb4337127e71935efcedafa34975eed9d0bdb9f372c0d02a95b9148130"
+      },
+      "input_metrics": [
+        "gross_profit",
+        "operating_revenue"
+      ],
+      "categories": [
+        "cogs",
+        "operating_revenue"
+      ]
+    },
+    "formula_version": "financial-intelligence/v1",
+    "currency": "INR",
+    "resolved_period": {
+      "fiscal_year": 2026,
+      "period_type": "year",
+      "start_date": "2026-04-01",
+      "end_date": "2027-03-31",
+      "day_count": 365,
+      "label": "FY 2026-27",
+      "financial_year_start_month": 4
+    },
+    "contributing_accounts": [
+      {
+        "account_id": 1,
+        "account_code": "0001",
+        "account_name": "Operating Revenue",
+        "account_type": "REVENUE",
+        "financial_statement": "PROFIT_AND_LOSS",
+        "financial_category": "operating_revenue",
+        "is_active": true,
+        "match_methods": [
+          "code"
+        ],
+        "debit": "0.00",
+        "credit": "100000.00",
+        "signed_amount": "100000.00",
+        "transaction_count": 4,
+        "source_file_ids": [
+          1
+        ]
+      },
+      {
+        "account_id": 3,
+        "account_code": "0003",
+        "account_name": "Cogs",
+        "account_type": "EXPENSE",
+        "financial_statement": "PROFIT_AND_LOSS",
+        "financial_category": "cogs",
+        "is_active": true,
+        "match_methods": [
+          "code"
+        ],
+        "debit": "40000.00",
+        "credit": "0.00",
+        "signed_amount": "40000.00",
+        "transaction_count": 4,
+        "source_file_ids": [
+          1
+        ]
+      }
+    ],
+    "transaction_count": 8,
+    "source_files": [
+      {
+        "source_file_id": 1,
+        "filename": "synthetic.csv",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "transaction_count": 8,
+        "warning_row_count": 0,
+        "error_row_count": 0
+      }
+    ],
+    "warnings": [
+      {
+        "code": "PERIOD_COVERAGE_UNVERIFIED",
+        "message": "Full reporting-period coverage is not verified.",
+        "scope": "period_activity",
+        "transaction_count": 0,
+        "source_file_ids": [],
+        "categories": [],
+        "debit": null,
+        "credit": null
+      }
+    ]
+  },
+  "unavailable_metric": {
+    "company_id": 1,
+    "metric": "dso",
+    "value": null,
+    "unit": "days",
+    "status": "unavailable",
+    "reason": {
+      "code": "CREDIT_SALES_BASE_UNAVAILABLE",
+      "message": "Reliable credit sales are unavailable; revenue is not a substitute."
+    },
+    "calculation_basis": {
+      "kind": "verified_balance",
+      "formula": "verified_average_trade_receivables / reliable_credit_sales * period_days",
+      "population_scope": {
+        "company_id": 1,
+        "currency": "INR",
+        "start_date": null,
+        "end_date": "2027-03-31",
+        "coverage_verified": false,
+        "population_fingerprint": "3fcd9edb4337127e71935efcedafa34975eed9d0bdb9f372c0d02a95b9148130"
+      },
+      "input_metrics": [
+        "average_trade_receivables",
+        "credit_sales"
+      ],
+      "categories": []
+    },
+    "formula_version": "financial-intelligence/v1",
+    "currency": "INR",
+    "resolved_period": {
+      "fiscal_year": 2026,
+      "period_type": "year",
+      "start_date": "2026-04-01",
+      "end_date": "2027-03-31",
+      "day_count": 365,
+      "label": "FY 2026-27",
+      "financial_year_start_month": 4
+    },
+    "contributing_accounts": [],
+    "transaction_count": 0,
+    "source_files": [],
+    "warnings": [
+      {
+        "code": "OPENING_BALANCES_UNVERIFIED",
+        "message": "Loaded cumulative activity does not establish verified opening or closing balances.",
+        "scope": "verified_balance",
+        "transaction_count": 0,
+        "source_file_ids": [],
+        "categories": [],
+        "debit": null,
+        "credit": null
+      },
+      {
+        "code": "VERIFIED_BALANCES_UNAVAILABLE",
+        "message": "Activity-derived amounts cannot substitute for verified balance inputs.",
+        "scope": "verified_balance",
+        "transaction_count": 0,
+        "source_file_ids": [],
+        "categories": [],
+        "debit": null,
+        "credit": null
+      },
+      {
+        "code": "CREDIT_SALES_NOT_IDENTIFIED",
+        "message": "Operating revenue is not used as a credit-sales substitute.",
+        "scope": "verified_balance",
+        "transaction_count": 0,
+        "source_file_ids": [],
+        "categories": [],
+        "debit": null,
+        "credit": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "account_code": "0001",
+    "account_name": "Operating Revenue",
+    "account_type": "REVENUE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "operating_revenue"
+  },
+  {
+    "account_code": "0002",
+    "account_name": "Other Income",
+    "account_type": "REVENUE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "other_income"
+  },
+  {
+    "account_code": "0003",
+    "account_name": "Cogs",
+    "account_type": "EXPENSE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "cogs"
+  },
+  {
+    "account_code": "0004",
+    "account_name": "Employee Cost",
+    "account_type": "EXPENSE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "employee_cost"
+  },
+  {
+    "account_code": "0005",
+    "account_name": "Other Operating Expense",
+    "account_type": "EXPENSE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "other_operating_expense"
+  },
+  {
+    "account_code": "0006",
+    "account_name": "Depreciation",
+    "account_type": "EXPENSE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "depreciation"
+  },
+  {
+    "account_code": "0007",
+    "account_name": "Finance Cost",
+    "account_type": "EXPENSE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "finance_cost"
+  },
+  {
+    "account_code": "0008",
+    "account_name": "Tax",
+    "account_type": "EXPENSE",
+    "financial_statement": "PROFIT_AND_LOSS",
+    "financial_category": "tax"
+  },
+  {
+    "account_code": "0009",
+    "account_name": "Cash",
+    "account_type": "ASSET",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "cash"
+  },
+  {
+    "account_code": "0010",
+    "account_name": "Trade Receivables",
+    "account_type": "ASSET",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "trade_receivables"
+  },
+  {
+    "account_code": "0011",
+    "account_name": "Inventory",
+    "account_type": "ASSET",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "inventory"
+  },
+  {
+    "account_code": "0012",
+    "account_name": "Other Current Assets",
+    "account_type": "ASSET",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "other_current_assets"
+  },
+  {
+    "account_code": "0013",
+    "account_name": "Fixed Assets",
+    "account_type": "ASSET",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "fixed_assets"
+  },
+  {
+    "account_code": "0014",
+    "account_name": "Other Non Current Assets",
+    "account_type": "ASSET",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "other_non_current_assets"
+  },
+  {
+    "account_code": "0015",
+    "account_name": "Trade Payables",
+    "account_type": "LIABILITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "trade_payables"
+  },
+  {
+    "account_code": "0016",
+    "account_name": "Short Term Debt",
+    "account_type": "LIABILITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "short_term_debt"
+  },
+  {
+    "account_code": "0017",
+    "account_name": "Long Term Debt",
+    "account_type": "LIABILITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "long_term_debt"
+  },
+  {
+    "account_code": "0018",
+    "account_name": "Other Current Liabilities",
+    "account_type": "LIABILITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "other_current_liabilities"
+  },
+  {
+    "account_code": "0019",
+    "account_name": "Other Non Current Liabilities",
+    "account_type": "LIABILITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "other_non_current_liabilities"
+  },
+  {
+    "account_code": "0020",
+    "account_name": "Share Capital",
+    "account_type": "EQUITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "share_capital"
+  },
+  {
+    "account_code": "0021",
+    "account_name": "Reserves",
+    "account_type": "EQUITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "reserves"
+  },
+  {
+    "account_code": "0022",
+    "account_name": "Retained Earnings",
+    "account_type": "EQUITY",
+    "financial_statement": "BALANCE_SHEET",
+    "financial_category": "retained_earnings"
+  }
+]

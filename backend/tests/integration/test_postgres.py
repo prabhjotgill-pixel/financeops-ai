@@ -1,6 +1,8 @@
 import os
 
 import pytest
+from alembic.config import Config
+from alembic.script import ScriptDirectory
 from sqlalchemy import text
 
 from backend.app.core.config import get_settings
@@ -20,7 +22,7 @@ def test_postgres_connection_and_migration_head() -> None:
             assert connection.scalar(text("SELECT 1")) == 1
             assert (
                 connection.scalar(text("SELECT version_num FROM alembic_version"))
-                == "0002_gl_ingestion"
+                == ScriptDirectory.from_config(Config("alembic.ini")).get_current_head()
             )
     finally:
         engine.dispose()

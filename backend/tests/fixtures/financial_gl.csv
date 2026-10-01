@@ -1,0 +1,79 @@
+Date,Document Number,Account Code,Account Name,Description,Debit,Credit,Currency
+2026-04-01,SYN-START,0009,Cash,Synthetic accounting entry,50000,,INR
+2026-04-01,SYN-START,0010,Trade Receivables,Synthetic accounting entry,10000,,INR
+2026-04-01,SYN-START,0011,Inventory,Synthetic accounting entry,50000,,INR
+2026-04-01,SYN-START,0012,Other Current Assets,Synthetic accounting entry,3000,,INR
+2026-04-01,SYN-START,0013,Fixed Assets,Synthetic accounting entry,40000,,INR
+2026-04-01,SYN-START,0014,Other Non Current Assets,Synthetic accounting entry,2000,,INR
+2026-04-01,SYN-START,0015,Trade Payables,Synthetic accounting entry,,10000,INR
+2026-04-01,SYN-START,0016,Short Term Debt,Synthetic accounting entry,,5000,INR
+2026-04-01,SYN-START,0017,Long Term Debt,Synthetic accounting entry,,20000,INR
+2026-04-01,SYN-START,0018,Other Current Liabilities,Synthetic accounting entry,,2000,INR
+2026-04-01,SYN-START,0019,Other Non Current Liabilities,Synthetic accounting entry,,3000,INR
+2026-04-01,SYN-START,0020,Share Capital,Synthetic accounting entry,,80000,INR
+2026-04-01,SYN-START,0021,Reserves,Synthetic accounting entry,,20000,INR
+2026-04-01,SYN-START,0022,Retained Earnings,Synthetic accounting entry,,15000,INR
+2026-04-15,SYN-Q1-operating_revenue,0001,Operating Revenue,Synthetic accounting entry,,25000,INR
+2026-04-15,SYN-Q1-operating_revenue,0010,Trade Receivables,Synthetic accounting entry,25000,,INR
+2026-04-15,SYN-Q1-cogs,0003,Cogs,Synthetic accounting entry,10000,,INR
+2026-04-15,SYN-Q1-cogs,0011,Inventory,Synthetic accounting entry,,10000,INR
+2026-04-15,SYN-Q1-employee_cost,0004,Employee Cost,Synthetic accounting entry,5000,,INR
+2026-04-15,SYN-Q1-employee_cost,0009,Cash,Synthetic accounting entry,,5000,INR
+2026-04-15,SYN-Q1-other_operating_expense,0005,Other Operating Expense,Synthetic accounting entry,2500,,INR
+2026-04-15,SYN-Q1-other_operating_expense,0009,Cash,Synthetic accounting entry,,2500,INR
+2026-04-15,SYN-Q1-depreciation,0006,Depreciation,Synthetic accounting entry,1250,,INR
+2026-04-15,SYN-Q1-depreciation,0013,Fixed Assets,Synthetic accounting entry,,1250,INR
+2026-04-15,SYN-Q1-other_income,0002,Other Income,Synthetic accounting entry,,500,INR
+2026-04-15,SYN-Q1-other_income,0009,Cash,Synthetic accounting entry,500,,INR
+2026-04-15,SYN-Q1-finance_cost,0007,Finance Cost,Synthetic accounting entry,250,,INR
+2026-04-15,SYN-Q1-finance_cost,0009,Cash,Synthetic accounting entry,,250,INR
+2026-04-15,SYN-Q1-tax,0008,Tax,Synthetic accounting entry,1625,,INR
+2026-04-15,SYN-Q1-tax,0018,Other Current Liabilities,Synthetic accounting entry,,1625,INR
+2026-07-15,SYN-Q2-operating_revenue,0001,Operating Revenue,Synthetic accounting entry,,25000,INR
+2026-07-15,SYN-Q2-operating_revenue,0010,Trade Receivables,Synthetic accounting entry,25000,,INR
+2026-07-15,SYN-Q2-cogs,0003,Cogs,Synthetic accounting entry,10000,,INR
+2026-07-15,SYN-Q2-cogs,0011,Inventory,Synthetic accounting entry,,10000,INR
+2026-07-15,SYN-Q2-employee_cost,0004,Employee Cost,Synthetic accounting entry,5000,,INR
+2026-07-15,SYN-Q2-employee_cost,0009,Cash,Synthetic accounting entry,,5000,INR
+2026-07-15,SYN-Q2-other_operating_expense,0005,Other Operating Expense,Synthetic accounting entry,2500,,INR
+2026-07-15,SYN-Q2-other_operating_expense,0009,Cash,Synthetic accounting entry,,2500,INR
+2026-07-15,SYN-Q2-depreciation,0006,Depreciation,Synthetic accounting entry,1250,,INR
+2026-07-15,SYN-Q2-depreciation,0013,Fixed Assets,Synthetic accounting entry,,1250,INR
+2026-07-15,SYN-Q2-other_income,0002,Other Income,Synthetic accounting entry,,500,INR
+2026-07-15,SYN-Q2-other_income,0009,Cash,Synthetic accounting entry,500,,INR
+2026-07-15,SYN-Q2-finance_cost,0007,Finance Cost,Synthetic accounting entry,250,,INR
+2026-07-15,SYN-Q2-finance_cost,0009,Cash,Synthetic accounting entry,,250,INR
+2026-07-15,SYN-Q2-tax,0008,Tax,Synthetic accounting entry,1625,,INR
+2026-07-15,SYN-Q2-tax,0018,Other Current Liabilities,Synthetic accounting entry,,1625,INR
+2026-10-15,SYN-Q3-operating_revenue,0001,Operating Revenue,Synthetic accounting entry,,25000,INR
+2026-10-15,SYN-Q3-operating_revenue,0010,Trade Receivables,Synthetic accounting entry,25000,,INR
+2026-10-15,SYN-Q3-cogs,0003,Cogs,Synthetic accounting entry,10000,,INR
+2026-10-15,SYN-Q3-cogs,0011,Inventory,Synthetic accounting entry,,10000,INR
+2026-10-15,SYN-Q3-employee_cost,0004,Employee Cost,Synthetic accounting entry,5000,,INR
+2026-10-15,SYN-Q3-employee_cost,0009,Cash,Synthetic accounting entry,,5000,INR
+2026-10-15,SYN-Q3-other_operating_expense,0005,Other Operating Expense,Synthetic accounting entry,2500,,INR
+2026-10-15,SYN-Q3-other_operating_expense,0009,Cash,Synthetic accounting entry,,2500,INR
+2026-10-15,SYN-Q3-depreciation,0006,Depreciation,Synthetic accounting entry,1250,,INR
+2026-10-15,SYN-Q3-depreciation,0013,Fixed Assets,Synthetic accounting entry,,1250,INR
+2026-10-15,SYN-Q3-other_income,0002,Other Income,Synthetic accounting entry,,500,INR
+2026-10-15,SYN-Q3-other_income,0009,Cash,Synthetic accounting entry,500,,INR
+2026-10-15,SYN-Q3-finance_cost,0007,Finance Cost,Synthetic accounting entry,250,,INR
+2026-10-15,SYN-Q3-finance_cost,0009,Cash,Synthetic accounting entry,,250,INR
+2026-10-15,SYN-Q3-tax,0008,Tax,Synthetic accounting entry,1625,,INR
+2026-10-15,SYN-Q3-tax,0018,Other Current Liabilities,Synthetic accounting entry,,1625,INR
+2027-01-15,SYN-Q4-operating_revenue,0001,Operating Revenue,Synthetic accounting entry,,25000,INR
+2027-01-15,SYN-Q4-operating_revenue,0010,Trade Receivables,Synthetic accounting entry,25000,,INR
+2027-01-15,SYN-Q4-cogs,0003,Cogs,Synthetic accounting entry,10000,,INR
+2027-01-15,SYN-Q4-cogs,0011,Inventory,Synthetic accounting entry,,10000,INR
+2027-01-15,SYN-Q4-employee_cost,0004,Employee Cost,Synthetic accounting entry,5000,,INR
+2027-01-15,SYN-Q4-employee_cost,0009,Cash,Synthetic accounting entry,,5000,INR
+2027-01-15,SYN-Q4-other_operating_expense,0005,Other Operating Expense,Synthetic accounting entry,2500,,INR
+2027-01-15,SYN-Q4-other_operating_expense,0009,Cash,Synthetic accounting entry,,2500,INR
+2027-01-15,SYN-Q4-depreciation,0006,Depreciation,Synthetic accounting entry,1250,,INR
+2027-01-15,SYN-Q4-depreciation,0013,Fixed Assets,Synthetic accounting entry,,1250,INR
+2027-01-15,SYN-Q4-other_income,0002,Other Income,Synthetic accounting entry,,500,INR
+2027-01-15,SYN-Q4-other_income,0009,Cash,Synthetic accounting entry,500,,INR
+2027-01-15,SYN-Q4-finance_cost,0007,Finance Cost,Synthetic accounting entry,250,,INR
+2027-01-15,SYN-Q4-finance_cost,0009,Cash,Synthetic accounting entry,,250,INR
+2027-01-15,SYN-Q4-tax,0008,Tax,Synthetic accounting entry,1625,,INR
+2027-01-15,SYN-Q4-tax,0018,Other Current Liabilities,Synthetic accounting entry,,1625,INR

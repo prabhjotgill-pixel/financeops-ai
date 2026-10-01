@@ -1,7 +1,7 @@
 [project]
 name = "financeops-ai"
 version = "0.1.0"
-description = "FinanceOps AI foundation and General Ledger ingestion"
+description = "FinanceOps AI ingestion and deterministic financial intelligence"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
