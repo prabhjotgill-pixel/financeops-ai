@@ -1,0 +1,9 @@
+Date,Document No,Account,Debit,Credit
+2025-01-02,MIX-001,Cash,100,
+2025-01-02,MIX-001,Revenue,,100
+bad-date,MIX-002,Cash,25,
+2025-01-03,MIX-003,Cash,bad-number,
+2025-01-03,MIX-004,Cash,10,10
+2025-01-03,MIX-005,Cash,,
+2025-01-03,MIX-006,,5,
+2025-01-02,MIX-001,Cash,100,

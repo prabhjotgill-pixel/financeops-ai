@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: windows-2025
+    env:
+      DATABASE_URL: postgresql+psycopg://financeops:financeops@127.0.0.1:5432/financeops
+      TEST_DATABASE_URL: postgresql+psycopg://financeops:financeops@127.0.0.1:5432/financeops
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v6
+      - name: Start native PostgreSQL
+        shell: pwsh
+        run: |
+          Set-Service postgresql-x64-17 -StartupType Manual
+          Start-Service postgresql-x64-17
+          (Get-Service postgresql-x64-17).WaitForStatus('Running', [TimeSpan]::FromSeconds(60))
+          $env:PGPASSWORD = 'root'
+          $psql = Join-Path $env:PGBIN 'psql.exe'
+          & $psql -h 127.0.0.1 -U postgres -d postgres -w -v ON_ERROR_STOP=1 -c "CREATE ROLE financeops LOGIN PASSWORD 'financeops'"
+          if ($LASTEXITCODE -ne 0) { throw 'Could not create test role' }
+          & $psql -h 127.0.0.1 -U postgres -d postgres -w -v ON_ERROR_STOP=1 -c "CREATE DATABASE financeops OWNER financeops"
+          if ($LASTEXITCODE -ne 0) { throw 'Could not create test database' }
+          Remove-Item Env:PGPASSWORD
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy backend
+      - run: uv run alembic upgrade head
+      - run: uv run pytest
+      - run: uv run pytest -m integration

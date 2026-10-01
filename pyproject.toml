@@ -1,0 +1,48 @@
+[project]
+name = "financeops-ai"
+version = "0.1.0"
+description = "FinanceOps AI foundation and General Ledger ingestion"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic",
+    "fastapi",
+    "httpx",
+    "openpyxl>=3.1.5",
+    "psycopg[binary]",
+    "pydantic",
+    "pydantic-settings",
+    "python-multipart>=0.0.32",
+    "sqlalchemy",
+    "streamlit",
+    "uvicorn",
+]
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+    "types-openpyxl>=3.1.5.20260827",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+addopts = "-m 'not integration'"
+markers = ["integration: requires a running PostgreSQL database and migrated DATABASE_URL or TEST_DATABASE_URL"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["backend"]
+strict = true

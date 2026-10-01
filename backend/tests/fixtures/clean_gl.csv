@@ -1,0 +1,5 @@
+Transaction Date,Document Number,Account Code,Account Name,Description,Debit,Credit,Currency,Cost Center,Department
+2025-01-02,JV-001,1000,Cash,Sale receipt,100.00,0,USD,NY,Sales
+2025-01-02,JV-001,4000,Revenue,Sale receipt,0,100.00,USD,NY,Sales
+2025-01-03,JV-002,5000,Expense,Office supplies,50.00,0,USD,NY,Admin
+2025-01-03,JV-002,1000,Cash,Office supplies,0,50.00,USD,NY,Admin
